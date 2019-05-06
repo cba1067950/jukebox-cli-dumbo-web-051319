@@ -51,10 +51,7 @@ def play(songs)
     if song_entry.to_i <= songs.length 
       songs.each_with_index do |song, index|
         binding.pry
-      
-        #elsif song_entry.is_a && song_entry < songs.length
-        #  puts "Playing #{songs[song_entry]}"
-       
+        puts "Playing #{songs[index]}"
       end
     end
     
