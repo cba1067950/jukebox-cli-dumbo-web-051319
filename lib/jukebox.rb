@@ -28,12 +28,8 @@ def help()
   puts help_msg
 end
 
-def play(song_array)
+def list(song_array)
   puts song_array
-end
-
-def list()
-  
 end
 
 def exit_jukebox()
