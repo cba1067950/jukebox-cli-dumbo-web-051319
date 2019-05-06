@@ -41,7 +41,9 @@ def play(songs)
   
     songs.each_with_index do |song, index|
       if songs.include?(song_entry)
-        puts "Playing #{song_entry}"
+        puts "Playing #{songs[index]}"
+      elsif song_entry < songs.length
+        puts "Playing #{songs[song_entry]}"
       else
         puts "Invalid input, please try again"
       end
