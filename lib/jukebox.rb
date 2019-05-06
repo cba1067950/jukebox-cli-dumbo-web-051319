@@ -55,6 +55,8 @@ def run(song_array)
     
     when
       
+    #else #default
+      
     end
     puts "Please enter a command:"
     cmd = gets.chomp
