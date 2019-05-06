@@ -36,7 +36,7 @@ end
 
 def play(songs)
   song_entry = ""
-  binding.pry
+  #binding.pry
   
   #while songs.include?(song_entry) == false
     puts "Please enter a song name or number: "
