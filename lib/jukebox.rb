@@ -40,7 +40,7 @@ def play(songs)
   song_entry = gets.chomp
   
   if songs.include?(song_entry)
-      puts "Playing #{songs_entry}"
+      puts "Playing #{song_entry}"
   elsif song_entry.to_i <= songs.length 
     songs.each_with_index do |song, index|
     puts "Playing #{songs[index]}"
