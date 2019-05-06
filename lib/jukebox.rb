@@ -62,7 +62,7 @@ def run(songs)
         help
 
       when "play"
-        play(cmd)
+        play(songs)
 
       when "list"
         list(songs)
