@@ -36,11 +36,12 @@ end
 
 def play(songs)
   song_entry = ""
+  binding.pry
   
   #while songs.include?(song_entry) == false
     puts "Please enter a song name or number: "
     song_entry = gets.chomp
-    binding.pry
+    
     songs.each_with_index do |song, index|
       binding.pry
       if songs.include?(song_entry)
