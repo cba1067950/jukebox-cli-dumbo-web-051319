@@ -32,6 +32,15 @@ def list(song_array)
   puts song_array
 end
 
+def play(song_array)
+  puts "Please enter a song name or number: "
+  song_entry = gets.chomp
+  
+  song_array.each do |song|
+    if song_entry
+  end
+end
+
 def exit_jukebox()
   
 end
