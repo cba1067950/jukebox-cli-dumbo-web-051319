@@ -65,7 +65,7 @@ def run(song_array)
       #  play(songs)
 
       when "list"
-        list
+        list(songs)
       #else #default
     end
   end
