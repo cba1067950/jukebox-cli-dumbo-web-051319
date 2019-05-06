@@ -36,27 +36,17 @@ end
 
 def play(songs)
   song_entry = ""
-  #binding.pry
+  puts "Please enter a song name or number: "
+  song_entry = gets.chomp
   
-  #while songs.include?(song_entry) == false
-    puts "Please enter a song name or number: "
-    song_entry = gets.chomp
-    
-    if songs.include?(song_entry)
-        puts "Playing #{songs[index]}"
-    else
-      puts "Invalid input, please try again"
-    end
-    
-    if song_entry.to_i <= songs.length 
-      songs.each_with_index do |song, index|
-        #binding.pry
-        puts "Playing #{songs[index]}"
-      end
-    end
-    
-  #end
-  
+  if songs.include?(song_entry)
+      puts "Playing #{songs_entry]}"
+  elsif song_entry.to_i <= songs.length 
+    songs.each_with_index do |song, index|
+    puts "Playing #{songs[index]}"
+  else
+    puts "Invalid input, please try again"
+  end
 end
 
 def exit_jukebox()
