@@ -32,15 +32,21 @@ def list(songs)
   puts songs
 end
 
-def play(song_array)
-  puts "Please enter a song name or number: "
-  song_entry = gets.chomp
+def play(songs)
+  song_entry = ""
   
-  if song_array.include?(song_entry)
-    puts "Playing #{song_entry}"
-  else
-    puts "Invalid input, please try again"
+  while songs.include?(song_entry) == false
+    puts "Please enter a song name or number: "
+    song_entry = gets.chomp
+  
+    if songs.include?(song_entry)
+      puts "Playing #{song_entry}"
+    else
+      puts "Invalid input, please try again"
+    end
+    
   end
+  
 end
 
 def exit_jukebox()
