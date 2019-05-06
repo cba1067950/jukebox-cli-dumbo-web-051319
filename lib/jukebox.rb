@@ -53,7 +53,8 @@ def run(song_array)
   while cmd != "exit"
     case x
     
-    when
+    when "exit"
+      exit_jukebox
       
     #else #default
       
