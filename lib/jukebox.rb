@@ -54,7 +54,7 @@ def run(song_array)
     puts "Please enter a command:"
     cmd = gets.chomp
     
-    case x
+    case cmd
       when "exit"
         exit_jukebox
       
