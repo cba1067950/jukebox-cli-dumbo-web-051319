@@ -42,6 +42,7 @@ def play(songs)
     puts "Please enter a song name or number: "
     song_entry = gets.chomp
     
+    if song_entry 
     songs.each_with_index do |song, index|
       binding.pry
       if songs.include?(song_entry)
