@@ -48,7 +48,7 @@ def play(songs)
       puts "Invalid input, please try again"
     end
     
-    if song_entry.to_i
+    if song_entry.to_i <= songs.length 
       songs.each_with_index do |song, index|
         binding.pry
       
