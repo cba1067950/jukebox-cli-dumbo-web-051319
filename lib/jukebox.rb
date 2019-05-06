@@ -28,8 +28,8 @@ def help()
   puts help_msg
 end
 
-def play()
-  
+def play(song_array)
+  puts song_array
 end
 
 def list()
