@@ -61,12 +61,11 @@ def run(songs)
       when "help"
         help
 
-      #when "play"
-      #  play(songs)
+      when "play"
+        play(cmd)
 
       when "list"
         list(songs)
-      #else #default
     end
   end
 end
