@@ -46,7 +46,7 @@ def play(songs)
       binding.pry
       if songs.include?(song_entry)
         puts "Playing #{songs[index]}"
-      elsif song_entry < songs.length
+      elsif song_entry.is song_entry < songs.length
         puts "Playing #{songs[song_entry]}"
       else
         puts "Invalid input, please try again"
