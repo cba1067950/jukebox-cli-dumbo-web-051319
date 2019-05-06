@@ -53,7 +53,9 @@ def run(song_array)
   while cmd != "exit"
     case x
     
-    
+    when
+      
+    end
     puts "Please enter a command:"
     cmd = gets.chomp
   end
