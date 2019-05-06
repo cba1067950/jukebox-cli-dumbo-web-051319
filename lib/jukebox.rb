@@ -48,9 +48,10 @@ def exit_jukebox()
 end
 
 def run()
+  cmd = ""
   while cmd != "exit"
-  help
-  puts "Please enter a command:"
-  cmd = gets.chomp
-  
+    help
+    puts "Please enter a command:"
+    cmd = gets.chomp
+  end
 end
