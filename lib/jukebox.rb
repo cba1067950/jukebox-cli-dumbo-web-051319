@@ -35,7 +35,7 @@ end
 def play(songs)
   song_entry = ""
   
-  while songs.include?(song_entry) == false
+  #while songs.include?(song_entry) == false
     puts "Please enter a song name or number: "
     song_entry = gets.chomp
   
@@ -49,7 +49,7 @@ def play(songs)
       end
     end
     
-  end
+  #end
   
 end
 
