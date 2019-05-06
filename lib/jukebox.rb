@@ -51,15 +51,22 @@ def run(song_array)
   cmd = ""
   help
   while cmd != "exit"
-    case x
-    
-    when "exit"
-      exit_jukebox
-      
-    #else #default
-      
-    end
     puts "Please enter a command:"
     cmd = gets.chomp
+    
+    case x
+      when "exit"
+        exit_jukebox
+      
+      when "help"
+        help
+
+      #when "play"
+      #  play(songs)
+
+      when "list"
+        list
+      #else #default
+    end
   end
 end
