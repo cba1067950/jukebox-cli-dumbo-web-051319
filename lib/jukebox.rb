@@ -42,15 +42,19 @@ def play(songs)
     puts "Please enter a song name or number: "
     song_entry = gets.chomp
     
-    if song_entry 
-    songs.each_with_index do |song, index|
-      binding.pry
-      if songs.include?(song_entry)
+    if songs.include?(song_entry)
         puts "Playing #{songs[index]}"
-      #elsif song_entry.is_a && song_entry < songs.length
-      #  puts "Playing #{songs[song_entry]}"
-      else
-        puts "Invalid input, please try again"
+    else
+      puts "Invalid input, please try again"
+    end
+    
+    if song_entry.to_i
+      songs.each_with_index do |song, index|
+        binding.pry
+      
+        #elsif song_entry.is_a && song_entry < songs.length
+        #  puts "Playing #{songs[song_entry]}"
+       
       end
     end
     
