@@ -47,7 +47,7 @@ def exit_jukebox()
   puts "Goodbye"
 end
 
-def run()
+def run(song_array)
   cmd = ""
   while cmd != "exit"
     help
