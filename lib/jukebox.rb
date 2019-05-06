@@ -1,3 +1,5 @@
+require 'pry'
+
 songs = [
   "Phoenix - 1901",
   "Tokyo Police Club - Wait Up",
@@ -40,6 +42,7 @@ def play(songs)
     song_entry = gets.chomp
   
     songs.each_with_index do |song, index|
+      binding.pry
       if songs.include?(song_entry)
         puts "Playing #{songs[index]}"
       elsif song_entry < songs.length
@@ -49,7 +52,7 @@ def play(songs)
       end
     end
     
-  #end
+  end
   
 end
 
