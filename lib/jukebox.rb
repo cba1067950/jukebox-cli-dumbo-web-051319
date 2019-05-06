@@ -36,8 +36,10 @@ def play(song_array)
   puts "Please enter a song name or number: "
   song_entry = gets.chomp
   
-  song_array.each do |song|
-    if song_entry
+  if song_array.include?(song_entry)
+    puts "Playing #{song_entry}"
+  else
+    puts "Invalid input, please try again"
   end
 end
 
